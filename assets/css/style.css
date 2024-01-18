@@ -121,6 +121,10 @@ body{
         padding-right: 10px;
         margin-top: 20px;
     }
+
+    .container span:nth-child(2){
+        color: rgb(214, 139, 0);
+    }
     
 }
 @media only screen and (max-width:400px){
@@ -130,6 +134,13 @@ body{
 
     .container button{
         width: 50%;
-        margin-left:30%;
+        margin-left:25%;
+    }
+
+    .container span:nth-child(1){
+        color: rgb(207 200 200);
+    }
+    .container span:nth-child(2){
+        color: #09926e;
     }
 }
