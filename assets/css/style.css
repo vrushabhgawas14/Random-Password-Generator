@@ -29,13 +29,13 @@ body{
 .container span:first-child{
     font-size: 1.5rem;
     margin-top: 10px;
-    color: white;
+    color: rgb(207 200 200);
     padding-left: 10px;
 }
 
 .container span:nth-child(2){
     font-size: 2rem;
-    color: white;
+    color: #09926e;
     padding-left: 10px;
     font-weight: 500;
     padding-bottom: 10px;
@@ -103,7 +103,7 @@ body{
 @media only screen and (max-width:900px){
 
     .container{
-        margin: 50% 12%;
+        margin: 50% 10%;
     }
 
     .container .box{
@@ -121,12 +121,8 @@ body{
         padding-right: 10px;
         margin-top: 20px;
     }
-
-    .container span:nth-child(2){
-        color: rgb(214, 139, 0);
-    }
-    
 }
+
 @media only screen and (max-width:400px){
     .container .box input{
         font-size: 20px;
@@ -135,12 +131,5 @@ body{
     .container button{
         width: 50%;
         margin-left:25%;
-    }
-
-    .container span:nth-child(1){
-        color: rgb(207 200 200);
-    }
-    .container span:nth-child(2){
-        color: #09926e;
     }
 }
