@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@900&family=Martel+Sans:wght@500;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,68 +13,123 @@ body{
 
 .container{
     background-color: #11021d;
-    width: 40vw;
-    height: 60vh;
+    margin: 12%;
+    width: 80%;
+    max-width: 700px;
     overflow: hidden;
-    margin: 10vh 25%;
-    border: 0;
-    border-radius: 20px;
-    position: relative;
+    border-radius: 8px;
+}
+
+.text{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    font-family: 'Martel Sans',sans-serif;
 }
 
 .container span:first-child{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     color: white;
+    padding-left: 10px;
 }
 
 .container span:nth-child(2){
     font-size: 2rem;
     color: white;
+    padding-left: 10px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom:4px solid #033649 ;
 }
 
 .container .box{
-    /* background-color: rgb(189, 218, 27); */
+    background-color: rgb(207 200 200);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 2rem;
-    width: 50%;
-    height: 10%;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 26px 20px;
+    width: 97%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container .box input{
-    border-radius:1rem ;
+    border-radius:2px ;
     border: 0;
     padding-left: 10px;
     outline: 0;
+    font-size: 30px;
+    color: 11021d;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    background-color: rgb(207 200 200);
 }
 
 .container .box img{
-    width: 8px;
+    width: 20px;
     cursor:pointer;
 }
 
 
 .container button{
-    width: 30%;
-    background-color: #950913;
+    width: 25%;
+    background-color: #098564;
     cursor: pointer;
     border: 0;
-    border-radius: 2rem;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left:38%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #011b24;
     
 }
 .container button img{
-    width: 10px;
+    width: 20px;
+    margin: 10px;
 }
 
 .container button:hover{
-    background-color: #a91923;
+    color: #05151b;
+    background-color:   #055f47;
+}
+
+@media only screen and (max-width:900px){
+
+    .container{
+        margin: 50% 12%;
+    }
+
+    .container .box{
+        padding: 15px 20px;
+        width: 94%;
+    }
+    
+    .container .box input{
+        font-size: 25px;
+    }
+
+    .container button{
+        width: 45%;
+        margin-left:28%;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+    
+}
+@media only screen and (max-width:400px){
+    .container .box input{
+        font-size: 20px;
+    }
+
+    .container button{
+        width: 50%;
+        margin-left:30%;
+    }
 }
